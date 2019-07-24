@@ -1,0 +1,52 @@
+﻿REACT REDUX
+
+
+Project info
+Project name
+React-asp-net
+Project ID
+react-asp-net
+Project number
+794138043468
+
+REACT IS USING ANGULAR BACKEND ASP.NET WITH ID: unique-yew-244216
+
+API 'https://unique-yew-244216.appspot.com
+
+Cloud Shell Project skeleton ASP.NET Core web app created with : dotnet new mvc -o React-ASp.NET-SIGMA
+
+CREATE RELEASE ASP.NET HELP HERE https://codelabs.developers.google.com/codelabs/cloud-app-engine-aspnetcore/#6
+In GCP https://console.cloud.google.com/cloudshell/editor?project=react-asp-net
+cd React-ASp.NET-SIGMA/
+publish:
+dotnet publish -c Release
+In GCP https://console.cloud.google.com/cloudshell/editor?project=react-asp-net
+Navigate to the publish folder for the next step.
+cd React-ASp.NET-SIGMA/bin/Release/netcoreapp2.1/publish
+gcloud app deploy --version v0 - funkade inte
+gcloud app deploy --version v1 - funkade inte fick slänga Microsoft.EntityFrameworkCore då det inte var versions kompatobelt med GCP
+gcloud app deploy --version v2
+
+All done!
+
+CREATE RELEASE REACT HELP HERE https://medium.com/tech-tajawal/deploying-react-app-to-google-app-engine-a6ea0d5af132
+
+DONT FORGET SETTING VERSIONING IN nav-menu.component.html AND package.json TODO create autostamping of versions from the package.json
+
+
+DONT FORGET SETTING VERSIONING IN nav-menu.component.html AND package.json
+
+Run this to create a version:
+
+VERSIONING: PROD NAME IS react-redux
+
+Go to : \AspNetCoreReactRedux\AspNetCoreReactRedux\ClientApp and run:
+
+gcloud app deploy --version react-redux (angular-v1  fick error Module build failed: Error: Cannot find module 'eslint/lib/formatters/stylish' . Deletade modules folder och lock file and then run npm install)
+gcloud app deploy --version react-redux (react-v2  fick error Module build failed: Error: Cannot find module 'eslint/lib/formatters/stylish'  . Deletade everything with the name eslint from package.json and eletade modules folder och lock file and then run npm install)
+gcloud app deploy --version react-redux (react-v3)
+gcloud app deploy --version react-redux (react-v4 now using ngular backend api)
+gcloud app deploy --version react-redux (react-v5 result list have a better formar look & feel, message "No result!" is showed if map no search result)
+
+Check GCA traffic splitting because it gets reset on public new version
+

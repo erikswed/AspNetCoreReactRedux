@@ -1,0 +1,6 @@
+https://www.codeproject.com/Articles/3132485/CRUD-Operation-using-ASP-NET-CORE-2-2-and-React-Re
+Gjorde om denna så¨den har books.xml som db
+
+orginalet heter
+AspNetCoreReactRedux-ORIGINAL ZIP
+
