@@ -9,7 +9,7 @@ react-asp-net
 Project number
 794138043468
 
-REACT IS USING ANGULAR BACKEND ASP.NET WITH ID: unique-yew-244216
+REACT at GCP IS USING ANGULAR BACKEND ASP.NET WITH ID: unique-yew-244216
 
 API 'https://unique-yew-244216.appspot.com
 
@@ -31,14 +31,11 @@ All done!
 
 CREATE RELEASE REACT HELP HERE https://medium.com/tech-tajawal/deploying-react-app-to-google-app-engine-a6ea0d5af132
 
-DONT FORGET SETTING VERSIONING IN nav-menu.component.html AND package.json TODO create autostamping of versions from the package.json
-
-
-DONT FORGET SETTING VERSIONING IN nav-menu.component.html AND package.json
+DONT FORGET SETTING VERSIONING IN nav-menu.component AND package.json TODO create autostamping of versions from the package.json
 
 Run this to create a version:
 
-VERSIONING: PROD NAME IS react-redux
+VERSIONING: PROD NAME IS: react-redux
 
 Go to : \AspNetCoreReactRedux\AspNetCoreReactRedux\ClientApp and run:
 
@@ -47,6 +44,7 @@ gcloud app deploy --version react-redux (react-v2  fick error Module build faile
 gcloud app deploy --version react-redux (react-v3)
 gcloud app deploy --version react-redux (react-v4 now using ngular backend api)
 gcloud app deploy --version react-redux (react-v5 result list have a better formar look & feel, message "No result!" is showed if map no search result)
-
+gcloud app deploy --version react-redux (react-v6 removed the "No result!" text on first render, dont need to show "No result!" when a search has not been done)
+2019-08-15 gcloud app deploy --version react-redux (react-v7 added in menu a button to view the xml db)
 Check GCA traffic splitting because it gets reset on public new version
 
