@@ -7,6 +7,7 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 const images = require.context('../../public/images', true);
 
@@ -38,6 +39,7 @@ export class Posts extends Component {
 
     }
     render() {
+
         const { classes } = this.props;
         // during first render we dont want to show the "No result!" text when this.props.books.length == 0
         if (this.props.books.length == 0) {

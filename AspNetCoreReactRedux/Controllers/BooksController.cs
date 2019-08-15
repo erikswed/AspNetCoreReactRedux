@@ -21,7 +21,7 @@ namespace AspNetCoreReactRedux.Controllers
         [Route("getbooks/{fromall}")]
         public IActionResult Books([FromQuery] BooksModel model)
         {
-
+            System.Threading.Thread.Sleep(2000);
             return Ok( _booksService.GetBooks(model));
         }
     }

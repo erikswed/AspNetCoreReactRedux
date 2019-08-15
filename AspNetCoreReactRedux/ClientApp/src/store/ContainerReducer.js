@@ -1,5 +1,6 @@
 ﻿const initialState = {
-    booksList: []
+    booksList: [],
+    progress: false
 }
 export const actionCreators = {
     // "applicationUrl": "http://localhost:51374",
@@ -16,9 +17,12 @@ export const actionCreators = {
         else {
             url = 'https://unique-yew-244216.appspot.com/api/BooksXml/getbooks/fromall/?' + queryString;
         }
+        dispatch({ type: 'START_PROGRESS' });
         const response = await fetch(url);
         const booksList = await response.json();
         dispatch({ type: 'FETCH_BOOKS', booksList });
+        dispatch({ type: 'STOP_PROGRESS' });
+
     },
 };
 
@@ -29,6 +33,18 @@ export const reducer = (state, action) => {
             return {
                 ...state,
                 booksList: action.booksList,
+            }
+        }
+        case 'START_PROGRESS': {
+            return {
+                ...state,
+                progress: true,
+            }
+        }
+        case 'STOP_PROGRESS': {
+            return {
+                ...state,
+                progress: false,
             }
         }
         default:
